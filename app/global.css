@@ -17,20 +17,13 @@
   --sh-entity: #e25a1c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
-}
-
 html {
   min-width: 360px;
+}
+
+body {
+  background-color: #662E7D;
+  color: #F4F5F1;
 }
 
 .prose .anchor {
@@ -147,4 +140,8 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+.navLink {
+  text-decoration: underline;
 }
