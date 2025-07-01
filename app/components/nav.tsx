@@ -38,7 +38,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Hamburger (mobile only) */}
+          {/* Hamburger menu on small screens */}
           <div className="sm:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -54,7 +54,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop Nav Items */}
-          <div className="hidden sm:flex space-x-4 justify-center flex-1">
+          <div className="hidden sm:flex space-x-12 justify-center flex-1">
             {Object.entries(navItems).map(([path, { name }]) => (
               <Link
                 key={path}
@@ -66,7 +66,7 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* GitHub Icon (desktop only) */}
+          {/* GitHub Icon */}
           <div className="flex-shrink-0 hidden sm:flex">
             <Link
               href="https://github.com/ProductiveOwl"
@@ -95,14 +95,17 @@ export function Navbar() {
                 {name}
               </Link>
             ))}
-
             <Link
               href="https://github.com/ProductiveOwl"
               target="_blank"
               rel="noopener noreferrer"
               className="block px-2 py-1 text-white hover:bg-white/20 rounded"
             >
-              GitHub
+              <img
+                src="/images/gitHubLogo.svg"
+                alt="GitHub"
+                className="h-6 w-auto"
+              />
             </Link>
           </div>
         )}
