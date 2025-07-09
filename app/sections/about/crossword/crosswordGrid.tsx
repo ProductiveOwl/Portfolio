@@ -102,7 +102,7 @@ export default function Crossword() {
               return (
                 <div
                   key={key}
-                  className={`relative aspect-square w-full border border-black flex items-center justify-center text-sm sm:text-base font-medium select-none ${baseClass}`}
+                  className={`leading-none relative aspect-square w-full border border-black flex items-center justify-center text-sm sm:text-base font-medium select-none ${baseClass}`}
                   onClick={() => !isEmpty && handleCellClick(rowIndex, colIndex)}
                 >
                   {number && (
@@ -110,11 +110,9 @@ export default function Crossword() {
                       {number}
                     </div>
                   )}
-                  {!isEmpty && (
-                    <div className="flex w-full h-full items-center justify-center text-sm sm:text-base font-medium select-none">
-                      {cell}
-                    </div>
-                  )}
+                  <div className="flex w-full h-full items-center justify-center text-sm sm:text-base font-medium select-none">
+                    {!isEmpty ? cell : ''}
+                  </div>
                 </div>
               )
             })
