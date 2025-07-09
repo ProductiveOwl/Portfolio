@@ -102,7 +102,7 @@ export default function Crossword() {
               return (
                 <div
                   key={key}
-                  className={`relative aspect-square w-full border border-black flex items-start justify-start p-0.5 ${baseClass}`}
+                  className={`relative aspect-square w-full border border-black flex items-center justify-center text-sm sm:text-base font-medium select-none ${baseClass}`}
                   onClick={() => !isEmpty && handleCellClick(rowIndex, colIndex)}
                 >
                   {number && (
