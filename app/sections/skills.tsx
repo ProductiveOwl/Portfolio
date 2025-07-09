@@ -1,12 +1,12 @@
+import WordSearch from "./skills/wordSearch/wordSearchGrid";
+
 export default function Skills() {
   return (
-    <section>
+    <section className="mb-8">
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter" id="skills">
         Skills
       </h1>
-      <p className="mb-4">
-        Lorem ipsum dolor sit amet
-        </p>
+      <WordSearch/>
     </section>
   )
 }
