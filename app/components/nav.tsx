@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const navItems = {
-  '/': { name: 'About' },
+  '/#about': { name: 'About' },
   '/#skills': { name: 'Skills' },
   '/experience': { name: 'Experience' },
   '/projects': { name: 'Projects' },
