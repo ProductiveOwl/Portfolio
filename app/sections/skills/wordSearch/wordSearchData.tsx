@@ -6,9 +6,9 @@ export const wordSearchData = {
     ['A', 'S', 'R', 'E', 'A', 'C', 'T', 'K', 'M', 'H'],
     ['C', 'Q', 'C', 'M', 'M', ' ', 'C', 'H', ' ', 'L'],
     ['R', 'L', 'G', 'O', 'T', 'O', 'S', 'T', 'O', 'I'],
-    ['G', 'I', 'T', 'T', 'D', 'N', 'S', 'M', 'R', 'N'],
-    ['F', 'F', 'U', 'R', 'M', 'E', 'U', 'C', ' ', 'U'],
-    ['C', 'F', 'R', 'R', 'Z', 'L', 'C', 'X', ' ', 'X'],
+    ['G', 'I', 'T', 'T', 'D', 'N', 'S', 'C', 'R', 'N'],
+    ['F', 'F', 'U', 'R', 'M', 'E', 'U', 'W', ' ', 'U'],
+    ['C', 'W', 'I', 'N', 'D', 'O', 'W', 'S', ' ', 'X'],
   ],
   /*List the left-most row and column number for each word. 
   The colour is the stripe used in the background for each word and the number is to arrange them based on layer order. 
@@ -26,7 +26,7 @@ export const wordSearchData = {
       {
         number: 2,
         clue: 'C',
-        row: 7,
+        row: 6,
         col: 7,
         answer: 'C',
         colour: 'bg-purple-300 text-black',
@@ -50,10 +50,18 @@ export const wordSearchData = {
       {
         number: 5,
         clue: 'R',
-        row: 8,
-        col: 2,
+        row: 7,
+        col: 3,
         answer: 'R',
         colour: 'bg-red-300 text-black',
+      },
+      {
+        number: 15,
+        clue: 'Windows',
+        row: 8,
+        col: 1,
+        answer: 'Windows',
+        colour: 'bg-blue-300 text-black',
       },
     ],
     down: [
