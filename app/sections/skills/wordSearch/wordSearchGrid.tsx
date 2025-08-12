@@ -188,7 +188,7 @@ export default function WordSearch() {
                                         )
                                     })}
                                     {/*Large z-index to always display the letters over the stripe */}
-                                    <span className="relative z-200">{cell}</span>
+                                    <span className="relative z-40">{cell}</span>
                                 </div>
                             )
                         })

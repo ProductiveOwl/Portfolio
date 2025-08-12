@@ -17,8 +17,8 @@ export function Navbar() {
     <div className="sticky top-0 z-50 w-full">
       <nav
         className="
-          bg-white/10
-          backdrop-blur-lg
+          bg-purple-800
+          backdrop-blur-sm
           rounded-b-2xl
           px-4 py-2
           shadow-md
@@ -59,7 +59,7 @@ export function Navbar() {
               <Link
                 key={path}
                 href={path}
-                className="hover:text-white text-sm font-medium transition"
+                className="hover:text-white hover:font-bold text-lg transition"
               >
                 {name}
               </Link>

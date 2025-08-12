@@ -1,17 +1,21 @@
 export const wordSearchData = {
   grid: [
     ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T'],
-    ['A', ' ', ' ', 'D', 'P', ' ', 'H', 'Y', ' ', 'R'],
-    ['V', ' ', 'S', 'A', 'O', 'Y', ' ', 'T', 'E', ' '],
+    ['A', 'M', 'Q', 'D', 'P', 'S', 'H', 'Y', 'V', 'R'],
+    ['V', 'L', 'S', 'A', 'O', 'Y', 'X', 'T', 'E', 'F'],
     ['A', 'S', 'R', 'E', 'A', 'C', 'T', 'K', 'M', 'H'],
-    ['C', 'Q', 'C', 'M', 'M', ' ', 'C', 'H', ' ', 'L'],
+    ['C', 'Q', 'C', 'M', 'M', 'D', 'C', 'H', 'G', 'L'],
     ['R', 'L', 'G', 'O', 'T', 'O', 'S', 'T', 'O', 'I'],
     ['G', 'I', 'T', 'T', 'D', 'N', 'S', 'C', 'R', 'N'],
-    ['F', 'F', 'U', 'R', 'M', 'E', 'U', 'W', ' ', 'U'],
-    ['C', 'W', 'I', 'N', 'D', 'O', 'W', 'S', ' ', 'X'],
+    ['F', 'F', 'U', 'R', 'M', 'E', 'U', 'W', 'O', 'U'],
+    ['C', 'W', 'I', 'N', 'D', 'O', 'W', 'S', 'J', 'X'],
   ],
-  /*List the left-most row and column number for each word. 
-  The colour is the stripe used in the background for each word and the number is to arrange them based on layer order. 
+  /* List the left-most row and column number for each word. 
+  - Answer: The actual language/tool/OS in the grid
+  - Colour: The stripe used in the background for each word.
+  - Number: Layer order (used when there are overlapping words). It is the z-index.
+  - Clue: The text that will appear in the word bank.
+  - Category: Categorized in the word bank. Options are 'Languages', 'Tools', and 'Operating Systems'.
   */
   clues: {
     across: [
@@ -22,6 +26,7 @@ export const wordSearchData = {
         col: 0,
         answer: 'JavaScript',
         colour: 'bg-yellow-300 text-black',
+        category: 'Languages',
       },
       {
         number: 2,
@@ -30,6 +35,7 @@ export const wordSearchData = {
         col: 7,
         answer: 'C',
         colour: 'bg-purple-300 text-black',
+        category: 'Languages',
       },
       {
         number: 3,
@@ -38,6 +44,7 @@ export const wordSearchData = {
         col: 2,
         answer: 'React',
         colour: 'bg-green-300 text-black',
+        category: 'Tools',
       },
       {
         number: 4,
@@ -46,6 +53,7 @@ export const wordSearchData = {
         col: 0,
         answer: 'Git',
         colour: 'bg-orange-300 text-black',
+        category: 'Tools',
       },
       {
         number: 5,
@@ -54,6 +62,7 @@ export const wordSearchData = {
         col: 3,
         answer: 'R',
         colour: 'bg-red-300 text-black',
+        category: 'Languages',
       },
       {
         number: 15,
@@ -62,6 +71,7 @@ export const wordSearchData = {
         col: 1,
         answer: 'Windows',
         colour: 'bg-blue-300 text-black',
+        category: 'Operating Systems',
       },
     ],
     down: [
@@ -72,6 +82,7 @@ export const wordSearchData = {
         col: 0,
         answer: 'Java',
         colour: 'bg-orange-300 text-black',
+        category: 'Languages',
       },
       {
         number: 9,
@@ -80,6 +91,7 @@ export const wordSearchData = {
         col: 1,
         answer: 'SQL',
         colour: 'bg-yellow-300 text-black',
+        category: 'Languages',
       },
       {
         number: 8,
@@ -88,6 +100,7 @@ export const wordSearchData = {
         col: 9,
         answer: 'Linux',
         colour: 'bg-yellow-300 text-black',
+        category: 'Operating Systems',
       },
     ],
     'diagonal-up': [
@@ -98,6 +111,7 @@ export const wordSearchData = {
         col: 0,
         answer: 'CSS',
         colour: 'bg-sky-300 text-black',
+        category: 'Languages',
       },
       {
         number: 10,
@@ -106,6 +120,7 @@ export const wordSearchData = {
         col: 0,
         answer: 'Figma',
         colour: 'bg-purple-300 text-black',
+        category: 'Tools',
       },
       {
         number: 11,
@@ -114,6 +129,7 @@ export const wordSearchData = {
         col: 4,
         answer: 'Docker',
         colour: 'bg-green-300 text-black',
+        category: 'Tools',
       },
     ],
     'diagonal-down': [
@@ -122,8 +138,9 @@ export const wordSearchData = {
         clue: 'Python',
         row: 1,
         col: 4,
-        answer: 'PYTHON',
+        answer: 'Python',
         colour: 'bg-sky-300 text-black',
+        category: 'Languages',
       },
       {
         number: 13,
@@ -132,6 +149,7 @@ export const wordSearchData = {
         col: 6,
         answer: 'HTML',
         colour: 'bg-red-300 text-black',
+        category: 'Languages',
       },
       {
         number: 7,
@@ -140,6 +158,7 @@ export const wordSearchData = {
         col: 0,
         answer: 'VSCode',
         colour: 'bg-red-300 text-black',
+        category: 'Tools',
       },
     ],
   },
