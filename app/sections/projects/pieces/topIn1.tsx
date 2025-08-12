@@ -17,7 +17,7 @@ export default function TopIn1({ title, label, link, colour, className = "", sty
             display: "flex",
             flexDirection: "column",
             alignItems: "center",       // horizontal centering
-            marginTop: "1.5rem",
+            marginTop: "30%",
             width: "100%",
             height: "100%",
             textAlign: "center",
@@ -43,7 +43,7 @@ export default function TopIn1({ title, label, link, colour, className = "", sty
             Application
           </p>
 
-          {/* Secondary Label */}
+          {/* Project Description */}
           <span
             style={{
               borderRadius: "8px",
@@ -52,7 +52,7 @@ export default function TopIn1({ title, label, link, colour, className = "", sty
               fontSize: "clamp(0.2rem, 1.4vw, 0.3rem)",
               fontFamily: "Arial, sans-serif",
               wordWrap: "break-word",
-              marginTop: "0.8rem",
+              marginTop: "0.9rem",
             }}
           >
             {label}

@@ -16,7 +16,7 @@ export default function BottomAllIn({ title, label, link, colour, className = ""
             display: "flex",
             flexDirection: "column",
             alignItems: "center",       // horizontal centering
-            marginTop: "1.5rem",
+            marginTop: "30%",
             width: "100%",
             height: "100%",
             textAlign: "center",
@@ -34,7 +34,7 @@ export default function BottomAllIn({ title, label, link, colour, className = ""
               wordWrap: "break-word",
             }}
           >
-            <a href={link} className="hover:text-blue-400 font-bold underline decoration-1">{title}</a>
+            <a href={link} className="text-black hover:text-blue-400 font-bold underline decoration-1">{title}</a>
           </span>
 
           {/* Label */}
@@ -42,16 +42,17 @@ export default function BottomAllIn({ title, label, link, colour, className = ""
             Application
           </p>
 
-          {/* Secondary Label */}
+          {/* Project Description */}
           <span
             style={{
               /*backgroundColor: "rgba(0, 0, 0, 0.3)",*/
               borderRadius: "8px",
               padding: "1px 0px",
+              color: "black",
               fontSize: "clamp(0.2rem, 1.4vw, 0.3rem)",
               fontFamily: "Arial, sans-serif",
               wordWrap: "break-word",
-              marginTop: "0.8rem",
+              marginTop: "0.9rem",
             }}
           >
             {label}

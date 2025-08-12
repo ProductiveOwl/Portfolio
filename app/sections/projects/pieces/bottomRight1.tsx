@@ -15,7 +15,7 @@ export default function BottomRight1({ title, label, link, colour, className = "
             display: "flex",
             flexDirection: "column",
             alignItems: "center",       // horizontal centering
-            marginTop: "1.5rem",
+            marginTop: "30%",
             width: "100%",
             height: "100%",
             textAlign: "center",
