@@ -12,9 +12,9 @@ export default function Projects() {
   ];
 
   const links = {
-    "CNN for Bioinformatics": "#about",
-    "Mancala": "#about",
-    "iGEM Website": "#about",
+    "CNN for Bioinformatics": "https://github.com/ProductiveOwl/Soybean-CNN",
+    "Mancala": "#projects",
+    "iGEM Website": "#projects",
     "GeAn Algorithm": "https://github.com/STEM-Fellowship-Indicium/tsp-code",
     "Game Escape": "https://github.com/ProductiveOwl/Game-Escape",
     "Pool": "https://github.com/ProductiveOwl/Pool"
@@ -30,11 +30,11 @@ export default function Projects() {
   ];
 
   // Background colour, outline colour
-  const pieceColour = ["#f0b9d1", "#000000", "#FF0000"]
+  const pieceColour = ["#fccee8", "#000000"]
 
   return (
-    <section>
-      <h1 className="mb-4 text-2xl font-semibold tracking-tighter">Projects</h1>
+    <section className="mb-8 border border-transparent shadow-2xl p-4" id="projects">
+      <h1 className="mb-4 text-2xl font-semibold tracking-tighter text-center">Projects</h1>
 
       {/* Outer container maintains aspect ratio and scales */}
       <div className="relative w-full aspect-[1/0.7] bg-transparent rounded overflow-show">

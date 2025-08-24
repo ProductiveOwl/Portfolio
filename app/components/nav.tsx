@@ -6,8 +6,8 @@ import { useState } from 'react'
 const navItems = {
   '/#about': { name: 'About' },
   '/#skills': { name: 'Skills' },
-  '/experience': { name: 'Experience' },
-  '/projects': { name: 'Projects' },
+  '/#experience': { name: 'Experience' },
+  '/#projects': { name: 'Projects' },
 }
 
 export function Navbar() {

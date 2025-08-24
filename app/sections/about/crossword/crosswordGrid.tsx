@@ -66,15 +66,15 @@ export default function Crossword() {
   }
 
   return (
-    <div className="flex flex-col md:flex-row md:items-start gap-4 w-full items-center justify-center">
+    <div className="flex flex-col md:flex-row md:items-start gap-3 w-full items-center justify-center">
       {/* Responsive Auto-Scaling Grid */}
-      <div className="w-full max-w-[600px]">
+      <div className="w-full max-w-[550px]">
         <div
           className="grid"
           style={{
             gridTemplateColumns: `repeat(${crosswordData.grid[0].length}, 1fr)`,
             width: '100%',
-            maxWidth: '700px',
+            maxWidth: '550px',
           }}
         >
           {crosswordData.grid.map((row, rowIndex) =>
@@ -92,9 +92,9 @@ export default function Crossword() {
               const baseClass = isEmpty
                 ? 'bg-gray-400'
                 : isHighlighted && isClue1 && isClue1Active
-                  ? 'bg-purple-300 text-purple-900'
+                  ? 'bg-purple-500 text-white'
                   : isHighlighted
-                    ? 'bg-blue-200'
+                    ? 'bg-blue-300'
                     : isClue1
                       ? 'bg-purple-400 text-white'
                       : 'bg-white text-gray-800'
@@ -121,7 +121,7 @@ export default function Crossword() {
       </div>
 
       {/* Clues */}
-      <div className="w-full md:w-[400px]">
+      <div className="w-full md:w-[400px] md:ml-2 justify-items-center">
         <Clues
           direction={direction}
           setDirection={setDirection}
