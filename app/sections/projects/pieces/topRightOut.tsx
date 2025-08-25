@@ -32,13 +32,14 @@ export default function TopRightOut({ title, label, link, colour, className = ""
               fontSize: "clamp(0.2rem, 1.4vw, 0.3rem)",
               fontFamily: "Arial, sans-serif",
               wordWrap: "break-word",
+              color: `${colour[2]}`,
             }}
           >
-            <a href={link} className="text-black hover:text-blue-400 font-bold underline decoration-1">{title}</a>
+            <a href={link} className="hover:text-blue-400 font-bold underline decoration-1">{title}</a>
           </span>
 
           {/* Label */}
-          <p className="rounded-xl bg-green-400 text-white px-1 text-wrap leading-snug text-[clamp(0.1rem,1vw,0.3rem)]">
+          <p className="rounded-xl bg-emerald-500 text-white px-1 text-wrap leading-snug text-[clamp(0.1rem,1vw,0.3rem)]">
             Web Design
           </p>
 
@@ -47,7 +48,7 @@ export default function TopRightOut({ title, label, link, colour, className = ""
             style={{
               borderRadius: "8px",
               padding: "1px 0px",
-              color: "black",
+              color: `${colour[2]}`,
               fontSize: "clamp(0.2rem, 1.4vw, 0.3rem)",
               fontFamily: "Arial, sans-serif",
               wordWrap: "break-word",

@@ -197,7 +197,7 @@ export default function WordSearch() {
             </div>
 
             {/* Word Bank */}
-            <div className="w-full md:w-[400px]">
+            <div className="w-full md:w-[400px] justify-items-center">
                 <WordBank
                     setActiveWord={setActiveWord}
                     highlightedWords={highlightedWords}

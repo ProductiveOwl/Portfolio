@@ -29,8 +29,8 @@ export default function Projects() {
     "A full stack project that allows two players to play pool against each other on a local server."
   ];
 
-  // Background colour, outline colour
-  const pieceColour = ["#fccee8", "#000000"]
+  // Background colour, outline colour, text colour
+  const pieceColour = ["#D678A8", "#000000", "#000000"]
 
   return (
     <section className="mb-8 border border-transparent shadow-2xl p-4" id="projects">

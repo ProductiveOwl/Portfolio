@@ -94,10 +94,10 @@ export default function Crossword() {
                 : isHighlighted && isClue1 && isClue1Active
                   ? 'bg-purple-500 text-white'
                   : isHighlighted
-                    ? 'bg-blue-300'
+                    ? 'bg-purple-300 text-black'
                     : isClue1
-                      ? 'bg-purple-400 text-white'
-                      : 'bg-white text-gray-800'
+                      ? 'bg-purple-400 text-black'
+                      : 'bg-white text-black'
 
               return (
                 <div
@@ -121,7 +121,8 @@ export default function Crossword() {
       </div>
 
       {/* Clues */}
-      <div className="w-full md:w-[400px] md:ml-2 justify-items-center">
+      <div className="w-full md:w-[400px] md:ml-2 mt-3 justify-items-center">
+        <p className='text-xl'>Word Search Clues</p>
         <Clues
           direction={direction}
           setDirection={setDirection}

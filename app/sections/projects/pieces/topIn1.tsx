@@ -32,9 +32,10 @@ export default function TopIn1({ title, label, link, colour, className = "", sty
               fontSize: "clamp(0.2rem, 1.4vw, 0.3rem)",
               fontFamily: "Arial, sans-serif",
               wordWrap: "break-word",
+              color: `${colour[2]}`,
             }}
           >
-            <a href={link} className="text-black hover:text-blue-400 font-bold underline decoration-1">{title}</a>
+            <a href={link} className="hover:text-blue-400 font-bold underline decoration-1">{title}</a>
           </span>
 
           {/* Label */}
@@ -47,7 +48,7 @@ export default function TopIn1({ title, label, link, colour, className = "", sty
             style={{
               borderRadius: "8px",
               padding: "1px 0px",
-              color: "black",
+              color: `${colour[2]}`,
               fontSize: "clamp(0.2rem, 1.4vw, 0.3rem)",
               fontFamily: "Arial, sans-serif",
               wordWrap: "break-word",

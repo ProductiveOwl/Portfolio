@@ -4,9 +4,9 @@ import { crosswordData } from './crosswordData'
 
 export default function Clues({ direction, setDirection, activeClue, setActiveClue, setHighlightedCells, getClueCells }) {
     return (
-        <div className="mt-6 w-full max-w-md bg-gray-400 rounded-md border">
+        <div className="mt-6 w-full max-w-md bg-purple-300 rounded-md">
             {/* Tab Headers */}
-            <div className="flex mb-4 border-b border-black">
+            <div className="flex mb-4">
                 {['Across', 'Down'].map((tab) => (
                     <button
                         key={tab}
@@ -17,7 +17,7 @@ export default function Clues({ direction, setDirection, activeClue, setActiveCl
                         }}
                         className={`flex-1 py-2 text-center border-b-2 ${direction === tab.toLowerCase()
                             ? 'text-purple-700 font-semibold'
-                            : 'bg-gray-400 text-white'
+                            : 'bg-gray-400 text-white border-b border-gray-400'
                             }`}
                     >
                         {tab}
@@ -26,7 +26,7 @@ export default function Clues({ direction, setDirection, activeClue, setActiveCl
             </div>
 
             {/* Clue List - Nested Clue Tabs */}
-            <div className="flex overflow-x-auto mx-2 mb-2 space-x-2">
+            <div className="flex overflow-x-auto mx-2 mb-2 pb-3 space-x-2 bg-purple-300">
                 {crosswordData.clues[direction].map((clue) => {
                     const isActive = activeClue?.number === clue.number && activeClue.direction === direction
                     const isClue1 = clue.number === 1
@@ -37,11 +37,11 @@ export default function Clues({ direction, setDirection, activeClue, setActiveCl
                                 setHighlightedCells(getClueCells(clue, direction))
                                 setActiveClue({ number: clue.number, direction })
                             }}
-                            className={`px-3 py-1 rounded-md border text-sm whitespace-nowrap ${isActive
-                                ? 'bg-purple-400 text-white font-bold'
+                            className={`px-3 py-1 rounded-md shadow-xl text-sm whitespace-nowrap ${isActive
+                                ? 'bg-purple-500 text-white font-bold'
                                 : isClue1
-                                    ? 'bg-purple-100 text-purple-800 border-purple-400'
-                                    : 'bg-white text-gray-700 border-gray-300'
+                                    ? 'bg-purple-400 text-purple-800 border-purple-400'
+                                    : 'bg-white text-black border-gray-300'
                                 }`}
                         >
                             {clue.number}
@@ -52,15 +52,13 @@ export default function Clues({ direction, setDirection, activeClue, setActiveCl
 
             {/* Selected Clue Text */}
             {activeClue && (
-                <div className="bg-white rounded-md p-4 border border-gray-200 text-sm text-gray-900">
-                    <strong>
-                        {activeClue.number}.{' '}
-                        {
-                            crosswordData.clues[activeClue.direction].find(
-                                (clue) => clue.number === activeClue.number
-                            )?.clue
-                        }
-                    </strong>
+                <div className="bg-purple-300 rounded-md p-4 border border-purple-400 text-sm text-black">
+                    {activeClue.number}.{' '}
+                    {
+                        crosswordData.clues[activeClue.direction].find(
+                            (clue) => clue.number === activeClue.number
+                        )?.clue
+                    }
                 </div>
             )}
         </div>

@@ -25,7 +25,7 @@ export default function WorkCards() {
 
   const experienceTypeStyle: Record<ExperienceType, string> = {
     Work: 'bg-red-400 text-white',
-    Club: 'bg-emerald-400 text-white',
+    Club: 'bg-blue-400 text-white',
     Volunteer: 'bg-purple-400 text-white',
   }
 
@@ -174,7 +174,7 @@ export default function WorkCards() {
         <path d={leftWallD} stroke="white" strokeWidth="4" fill="none" strokeLinejoin="round" />
         <path d={rightWallD} stroke="white" strokeWidth="4" fill="none" strokeLinejoin="round" />
         <path ref={pathRef} d={pathD} stroke="white" strokeDasharray="3, 20" strokeWidth="2" fill="none" strokeLinejoin="round" />
-        <motion.circle cx={pos.x} cy={pos.y} r="8" fill="red" stroke="black" />
+        <motion.circle cx={pos.x} cy={pos.y} r="8" fill="white" stroke="black" />
       </svg>
 
       {experienceData.workExperience.map((experience, index) => {
@@ -188,7 +188,7 @@ export default function WorkCards() {
               className="relative w-10/11 py-10 rounded-xl"
             >
               <div className={`flex ${alignment}`} style={{ wordBreak: 'break-word' }}>
-                <div className="container w-[90%] bg-blue-300 text-black rounded-xl p-4 shadow-md">
+                <div className="container w-[90%] bg-emerald-400 text-black rounded-xl p-4 shadow-md">
                   <p className="font-bold">
                     {experience.title} @ {experience.company}
                   </p>

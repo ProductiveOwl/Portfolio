@@ -16,18 +16,20 @@ export const experienceData = {
             company: 'University of Guelph',
             date: 'May 2025 - Present (Co-op)',
             experienceType: 'Work',
-            details: ["Worked on a Convolutional Neural Network (CNN) to predict quantitative traits in bioinformatics research by adjusting parameters and running tests on new data.", 
-                "Created scripts using Python (pandas) to parse over 4 million rows of genomic data into a format suitable for CNN analysis.", 
+            details: ["Worked on a Convolutional Neural Network (CNN) to predict quantitative traits in bioinformatics research by adjusting parameters and running tests on new data.",
+                "Created scripts using Python (pandas) to parse over 4 million rows of genomic data into a format suitable for CNN analysis.",
                 "Tested and documented popular genome analysis software with Python and Docker for future research."],
             link: 'https://github.com/ProductiveOwl/Soybean-CNN',
-            linkDescription: 'Check our our CNN, research paper and results for the BIBM Conference.'
+            linkDescription: 'Check out our CNN, research paper and results for the BIBM Conference.'
         },
         {
             title: 'Frontend Developer Member',
             company: 'iGEM Guelph',
             date: 'April 2025 - Present',
-            description: 'Temp text',
             experienceType: 'Club',
+            details: ["A full-stack project that allows users to simulate genetic systems for the iGEM competition.",
+                "Uses the OpenAI API to parse user requests from plain English to JSON to simulate various biological models.",
+                "Uses React and Bootstrap in the frontend and Python in the backend."],
         },
         {
             title: 'Programming Teaching Assistant (UTA)',
