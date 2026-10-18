@@ -7,29 +7,41 @@ export const experienceData = {
     
     Optional:
     - Date
-    - Description
+    - Description (single line/paragraph)
     - Link & Link Description
     - Details (Bullet points)*/
     workExperience: [
         {
-            title: 'Neural Network Research Assistant (USRA)',
+            title: 'Software Developer',
+            company: 'MANTECH Inc',
+            date: 'January 2026 - August 2026 (Co-op)',
+            experienceType: 'Work',
+            details: ["Worked on an application that uses scientific instruments for water analysis",
+                "Used C# to create new features on the frontend & backend",
+                "Refactored old code to use dependency injection for the new application"],
+        },
+        {
+            title: 'Computing Research Assistant (USRA)',
             company: 'University of Guelph',
-            date: 'May 2025 - Present (Co-op)',
+            date: 'May 2025 - April 2026 (Co-op/Contract)',
             experienceType: 'Work',
             details: ["Worked on a Convolutional Neural Network (CNN) to predict quantitative traits in bioinformatics research by adjusting parameters and running tests on new data.",
                 "Created scripts using Python (pandas) to parse over 4 million rows of genomic data into a format suitable for CNN analysis.",
-                "Tested and documented popular genome analysis software with Python and Docker for future research."],
+                "Worked on the lab website as a web developer"],
             link: 'https://github.com/ProductiveOwl/Soybean-CNN',
             linkDescription: 'Check out our CNN, research paper and results for the BIBM Conference.'
         },
         {
-            title: 'Frontend Developer Member',
+            title: 'Software Developer Member',
             company: 'iGEM Guelph',
-            date: 'April 2025 - Present',
+            date: 'April 2025 - October 2025',
             experienceType: 'Club',
-            details: ["A full-stack project that allows users to simulate genetic systems for the iGEM competition.",
+            details: ["Won a Gold Medal for the University of Guelph Team.",
+                "Worked on a full-stack project (BioMap) that allows users to simulate genetic systems for the iGEM competition.",
                 "Uses the OpenAI API to parse user requests from plain English to JSON to simulate various biological models.",
                 "Uses React and Bootstrap in the frontend and Python in the backend."],
+            link: 'https://2025.igem.wiki/guelph/software',
+            linkDescription: 'BioMap Website'
         },
         {
             title: 'Programming Teaching Assistant (UTA)',

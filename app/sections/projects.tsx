@@ -13,8 +13,8 @@ export default function Projects() {
 
   const links = {
     "CNN for Bioinformatics": "https://github.com/ProductiveOwl/Soybean-CNN",
-    "Mancala": "#projects",
-    "iGEM Website": "#projects",
+    "Mancala": "https://github.com/ProductiveOwl/Mancala",
+    "iGEM Website": "https://2025.igem.wiki/guelph/software",
     "GeAn Algorithm": "https://github.com/STEM-Fellowship-Indicium/tsp-code",
     "Game Escape": "https://github.com/ProductiveOwl/Game-Escape",
     "Pool": "https://github.com/ProductiveOwl/Pool"
@@ -23,14 +23,14 @@ export default function Projects() {
   const projectDescriptions = [
     "An adapted Convoluntional Neural Network to predict soybean phenotypes that I helped test for a conference. The paper and CNN architecture are included.",
     "A Java Swing application that allows two users to play Mancala against each other.",
-    "A website for the iGEM Competition to simulate different biological systems with AI. In progress...",
+    "A website for the iGEM Competition to simulate different biological systems with AI.",
     "Created a custom biological algorithm to solve the Traveling Salesman Problem with a team for the STEM Fellowship Conference.",
     "A Java Swing game that tests the user's ability to get through all the minigames before time runs out.",
     "A full stack project that allows two players to play pool against each other on a local server."
   ];
 
   // Background colour, outline colour, text colour
-  const pieceColour = ["#D678A8", "#000000", "#000000"]
+  const pieceColour = ["#BD9DEA", "#000000", "#000000"]
 
   return (
     <section className="mb-8 border border-transparent shadow-2xl p-4" id="projects">
